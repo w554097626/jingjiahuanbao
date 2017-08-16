@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/Js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/Js/common.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/Js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/Js/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#slider').nivoSlider({
+            effect: 'random',
+            slices: 15,
+            animSpeed: 500,
+            pauseTime: 3000,
+            directionNav: true,
+            controlNav: true,
+            keyboardNav: true
+        });
+		if($(window).width()>1440){
+		$(".maxx-theme .nivoSlider").css({"width":"1440px","height":"470px"})
+		$(".maxx-theme .nivoSlider img").css({"width":"1440px","height":"470px"})
+		}else{
+		$(".maxx-theme .nivoSlider").css("height","470px")
+		$(".maxx-theme .nivoSlider img").css("height","470px")
+		}
+    });	
+</script>
+<style>
+body {
+	padding:0;
+	margin:0
+}
+/* nivoSlider */
+    .nivoSlider {
+	position:relative;
+	z-index:1
+}
+.nivoSlider img {
+	position:absolute;
+	top:0;
+	left:0;
+}
+/* If an image is wrapped in a link */
+    .nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+    .nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+    .nivo-caption {
+	position:absolute;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:8;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+	display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+    .nivo-directionNav a {
+	position:absolute;
+	top:97.6%;
+	z-index:8;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0;
+}
+.nivo-nextNav {
+	right:0;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+    .nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+/* maxx-theme */
+	.maxx-theme {
+	width:100%;
+	height:470px;
+	margin:0 auto;
+}
+.maxx-theme .nivoSlider {
+	position:relative;
+	background:#fff url(/templets/default/Images/loading.gif) no-repeat 50% 50%;
+	height:470px;
+	width:100%;
+	margin:0 auto
+}
+.maxx-theme .nivoSlider img {
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	overflow:hidden
+}
+.maxx-theme .nivoSlider a {
+	border:0;
+	display:block;
+}
+.maxx-theme .nivo-controlNav {
+	position:absolute;
+	left:50%;
+	bottom:-36px;
+	width:970px;
+	height:42px;
+	background-position:-24px 0;
+	margin-left:-485px; /* Tweak this to center bullets */
+	z-index:10
+}
+.maxx-theme .nivo-controlNav a {
+	display:block;
+	width:194px;
+	height:6px;
+	text-indent:-9999px;
+	border:0;
+	float:left;
+	background:#fff;
+}
+.maxx-theme .nivo-controlNav a.active {
+	background:#d0000e
+}
+.maxx-theme .nivo-directionNav a {
+	display:block;
+	width:70px;
+	height:30px;
+	text-indent:-9999px;
+	border:0;
+	display:none
+}
+.maxx-theme .nivo-directionNav a.nivo-nextNav {
+	display:none
+}
+.maxx-theme .nivo-directionNav a.nivo-prevNav {
+	display:none
+}
+.maxx-theme .nivo-caption {
+	font-family: Helvetica, Arial, sans-serif;
+	width:460px;
+	padding:5px 10px 10px;
+	right:0;
+	top:228px;
+	text-align:right;
+	min-height:65px;
+}
+.maxx-theme .nivo-caption h1 {
+	margin-top:0;
+	margin-bottom:10px;
+}
+.maxx-theme .nivo-caption a {
+	color:#fff;
+	border-bottom:1px dotted #fff;
+}
+.maxx-theme .nivo-caption a:hover {
+	color:#fff;
+}
+</style>
+</head>
+<body>
+<form method="post" action="Index.aspx" id="form1">
+  <div class="aspNetHidden">
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+  </div>
+  <div id="wrap">
+    <div class="fixheight">
+      <div class="fixtop">
+        <div  class="fixtop2">
+          <div class="logo"> <a href="/"><img  src="/templets/default/Images/logo12.png" /></a> </div>
+          <div class="topright">
+            <div id="nav">
+              <ul class="nav">
+                {dede:channel type='top' row='7' }
+                <li> <a href='[field:typeurl/]' [field:rel/]>[field:typename/]</a></li>
+                {/dede:channel}
+              </ul>
+            </div>
+            <div class="subnav">
+              <ul class="subcon" style="padding-left:30px;">
+                {dede:channelartlist typeid=1}
+                <li><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
+                {/dede:channelartlist}
+              </ul>
+              <ul class="subcon" style="padding-left:130px">
+                {dede:channelartlist typeid=2}
+                <li><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
+                {/dede:channelartlist}
+              </ul>
+              <ul class="subcon" style="padding-left:80px">
+                {dede:channelartlist typeid=3}
+                <li><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
+                {/dede:channelartlist}
+              </ul>
+              <ul class="subcon" style="padding-left:340px">
+                {dede:channelartlist typeid=4}
+                <li><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
+                {/dede:channelartlist}
+              </ul>
+              <ul class="subcon" style="padding-left:410px">
+                {dede:channelartlist typeid=5}
+                <li><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
+                {/dede:channelartlist}
+              </ul>
+              <ul class="subcon" style="padding-left:465px">
+                {dede:channelartlist typeid=6}
+                <li><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
+                {/dede:channelartlist}
+              </ul>
+              <ul class="subcon" style="padding-left:400px">
+                {dede:channelartlist typeid=7}
+                <li><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
+                {/dede:channelartlist}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="maxx-theme">
+        <div id="slider" class="nivoSlider"> <a><img alt="首页Banner1" src="/templets/default/Images/2014041514063835.jpg" style="width:100%; height:470px;"></a> <a><img alt="首页Banner2" src="/templets/default/Images/2014041513594046.jpg" style="width:100%; height:470px;"></a> <a><img alt="首页Banner3" src="/templets/default/Images/2014041513551554.jpg" style="width:100%; height:470px;"></a> <a><img alt="首页Banner4" src="/templets/default/Images/2014041514110139.jpg" style="width:100%; height:470px;"></a> <a><img alt="首页Banner5" src="/templets/default/Images/2014041518045054.jpg" style="width:100%; height:470px;"></a> </div>
+      </div>
+    </div>
+    <div class="box1">
+      <div class="box1list">
+        <div class="boxpic"><img alt="企业新闻" src="/templets/default/Images/pic1.png" /></div>
+        <div class="boxtit"><a href="/">企业新闻<span>/NEWS</span></a></div>
+        <p>{dede:sql sql='Select content from dede_arctype where id=1'}[field:content function='html2text(cn_substr(@me,250))'/]...{/dede:sql}</p>
+        <div class="boxmore"><a href="/">Read more >></a></div>
+      </div>
+      <div class="box1list">
+        <div class="boxpic"><img alt="行业动态" src="/templets/default/Images/pic2.png" /></div>
+        <div class="boxtit"><a href="/">行业动态<span>/dynamic</span></a></div>
+        <p>{dede:sql sql='Select content from dede_arctype where id=1'}[field:content function='html2text(cn_substr(@me,250))'/]...{/dede:sql}</p>
+        <div class="boxmore"><a href="">Read more >></a></div>
+      </div>
+      <div class="box1list">
+        <div class="boxpic"><img alt="服务支持" src="/templets/default/Images/pic3.png" /></div>
+        <div class="boxtit"><a href="/">服务支持<span>/support</span></a></div>
+        <p>{dede:sql sql='Select content from dede_arctype where id=1'}[field:content function='html2text(cn_substr(@me,250))'/]...{/dede:sql}</p>
+        <div class="boxmore"><a href="/">Read more >></a></div>
+      </div>
+    </div>
+    <div class="box2">
+      <div class="gcal"> {dede:include filename="gcal.htm"/} </div>
+    </div>
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/Js/ui_tools.js"></script>
+    <div id="bottom">
+      <div class="bottom">
+        <div class="botleft">
+          <div class="botlink">
+            <div class="botcon">
+              <div class="bottit">关于我们</div>
+              <ul class="botlist">
+                {dede:channelartlist typeid=3}
+                <li ><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
+                {/dede:channelartlist}
+              </ul>
+            </div>
+            <div class="botcon">
+              <div class="bottit">服务支持</div>
+              <ul class="botlist">
+                {dede:channelartlist typeid=3}
+                <li ><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
+                {/dede:channelartlist}
+              </ul>
+            </div>
+            <div class="botcon">
+              <div class="bottit">联系我们</div>
+              <ul class="botlist">
+                {dede:channelartlist typeid=3}
+                <li ><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
+                {/dede:channelartlist}
+              </ul>
+            </div>
+          </div>
+          <ul class="botform">
+            <li>
+              <label>用户名：</label>
+              <input type="text" class="input1"/>
+            </li>
+            <li>
+              <label>密码：</label>
+              <input type="text" class="input1"/>
+            </li>
+            <li>
+              <input type="submit" class="btn1" value="登陆" />
+            </li>
+          </ul>
+        </div>
+        <div class="botcent">
+          <div class="bottit2">ECOSYS</div>
+          <p>华北互联最新申请的商标代表绿色、低碳、环保</p>
+          <a target="_blank" href="/" class="ecosys"></a> </div>
+        <ul class="botright">
+          <li><img alt="" src="templets/default/Images/icon1.jpg" /><a href="#"> 1186032326@qq.com</a></li>
+          <li><img alt="" src="templets/default/Images/icon2.jpg" />
+            <p>华北互联</p>
+          </li>
+          <li><img alt="" src="templets/default/Images/icon3.jpg" />
+            <p> / 某某某:15227618154</p>
+          </li>
+          <li><img alt="" src="templets/default/Images/icon2.jpg" />
+            <p>海华北互联</p>
+          </li>
+          <li><img alt="" src="templets/default/Images/icon3.jpg" />
+            <p> / 某某某:15227618154</p>
+          </li>
+        </ul>
+        <div class="copyright">华北互联   AIKANG Fitness Co., Ltd.@2014-2020  CopyRight 京ICP备09999759号 </div>
+      </div>
+			<p>Power by 华北互联</p>
+	  </div>
+  </div>
+</form>
+</body>
+</html>

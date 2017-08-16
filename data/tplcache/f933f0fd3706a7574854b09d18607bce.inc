@@ -1,0 +1,1 @@
+<a style="visibility: visible; display: block;" href=""> <img  class="Picture" src="[field:litpic/]"/></a>

@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/css/lbanner.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/Js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/Js/common.js"></script>
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/Js/slider.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        $('#demo01').flexslider({
+            animation: "slide",
+            direction: "horizontal",
+            easing: "swing"
+        });
+    });
+    </script>
+
+    
+</head>
+<body>
+    <form method="post" action="About.aspx" id="form1">
+
+    <div id="wrap">
+        {dede:include filename="head.htm"/}
+        <div id="main">
+            
+    <div class="lbanner">
+
+
+<script type='text/javascript' src='{dede:global.cfg_templets_skin/}/Js/jquery.easing-1.3.min.js'></script>
+<script type='text/javascript' src='{dede:global.cfg_templets_skin/}/Js/jquery.smartStartSlider.min.js'></script>
+
+<div id="features-slider" class="ss-slider">
+    
+            <div class="slide">
+                <img width="964" height="291" src="/templets/default/Images/2014041114042221.jpg"  class="slide-bg-image" />
+                <div class="slide-button "><span class="dropcap"></span></div><div class="slide-content"></div>
+            </div>
+        
+            <div class="slide">
+                <img width="964" height="291" src="/templets/default/Images/2014041114051648.jpg"  class="slide-bg-image" />
+                <div class="slide-button "><span class="dropcap"></span></div><div class="slide-content"></div>
+            </div>
+        
+</div>
+
+<script>
+    (function ($) {
+        var $slider = $('#features-slider');
+        if ($slider.length) {
+            // Prevent multiple initialization
+            if ($slider.data('init') === true)
+                return false;
+
+            $slider.data('init', true)
+		.smartStartSlider({
+			width: 964,
+			height: 291,
+			contentSpeed: 450,
+			showContentOnhover: 1,
+			hideContent: 0,
+			contentPosition: "",
+			timeout: 3000,
+			pause: 0,
+			pauseOnHover: 1,
+			type: {
+			    mode: "random",
+			    speed: 500,
+			    easing: "easeInOutExpo",
+			    seqfactor: 100
+			}
+		});
+
+            // Detect swipe gestures support
+            if (Modernizr.touch) {
+                function swipeFunc(e, dir) {
+                    var $slider = $(e.currentTarget);
+
+                    if (dir === 'left') {
+                        $slider.find('.pagination-container .next').trigger('click');
+                    }
+
+                    if (dir === 'right') {
+                        $slider.find('.pagination-container .prev').trigger('click');
+                    }
+                }
+
+                $slider.swipe({
+                    swipeLeft: swipeFunc,
+                    swipeRight: swipeFunc,
+                    allowPageScroll: 'auto'
+                });
+            }
+        }
+    })(jQuery);
+</script></div>
+    <div class="loc"><img alt="" src="/templets/default/Images/loc.jpg" />您当前位置：{dede:field name='position'/}</div>
+    <div class="main">
+        <div id="left">
+            <div class="lnavtit">{dede:field name='typename'/}<span>/PRODUCTS</span></div>
+            <ul class="lnavlist">
+             {dede:channel type='son' currentstyle="<li><a href='~typelink~' class='thisclass'>~typename~</a></li> "}
+      <li id="nn[field:global name=autoindex runphp="yes"]@me=@me-1;[/field:global]"><a href='[field:typeurl/]'>[field:typename/]</a></li>
+ {/dede:channel}
+            </ul>
+        </div>
+        <script>
+			var thislocation = window.location+"";
+			if(thislocation=="")
+			{
+			 document.getElementById("nn0").className='lnavcur';
+			}
+			else  if(thislocation.indexOf("/") != -1)
+			{
+			 document.getElementById("nn1").className='lnavcur';	  	  
+			}
+			else  if(thislocation.indexOf("/") != -1)
+			{
+			 document.getElementById("nn2").className='lnavcur';	  	  
+			}
+			else  if(thislocation.indexOf("/") != -1)
+			{
+			 document.getElementById("nn3").className='lnavcur';	  	  
+			}
+			else  if(thislocation.indexOf("/") != -1)
+			{
+			 document.getElementById("nn3").className='lnavcur';	  	  
+			}
+		</script>
+        <div id="right">
+			<script  type="text/javascript" >
+			    $('div[name="joinUsTab"]').live('click', function () {
+			        if (!window.current) {
+			            window.current = 0;
+			        }
+			        var tabWidth = $('.wingsArea').width();
+			        var index = $(this).index() - 2;
+			        //alert($(this).index());
+			        $('div[name="joinUsTab"]').each(function () {
+			            $(this).removeClass('current');
+			            $(this).addClass('switch');
+			        });
+			        $(this).removeClass('switch');
+			        $(this).addClass('current');
+			        $('.bigContainer').animate({ marginLeft: -index * tabWidth + "px" });
+			        window.current = index;
+			    });
+            </script>
+
+            <div class="top_title">
+                <div class="baiwan_title"></div>
+                <div class="title"></div>                          
+                
+                
+                        <div class='switch' name='joinUsTab'><a href='javascript:void();'>产品介绍</a></div><div class='switch' name='joinUsTab'><a href='javascript:void();'>产品特点</a></div><div class='switch' name='joinUsTab'><a href='javascript:void();'>应用领域</a></div><div class='switch' name='joinUsTab'><a href='javascript:void();'>连接方式</a></div><div class='switch' name='joinUsTab'><a href='javascript:void();'>规格型号</a></div>
+                    
+            </div>
+            <div class="content1">
+                <div class = "bigContainer" style="width:10000px;">
+                    
+                    
+                            <div class='wingsArea'>{dede:field.body/}</div><div class='wingsArea'><span style="color: rgb(73, 76, 78); font-family: 'Lucida Grande', 'Lucida Sans Unicode', 宋体, 新宋体, arial, verdana, sans-serif; line-height: 21px; ">PE-RT管材由于特殊的分子结构，具备很多优点：</span></p>
+<div align="left" style="color: rgb(73, 76, 78); font-family: 'Lucida Grande', 'Lucida Sans Unicode', 宋体, 新宋体, arial, verdana, sans-serif; line-height: 21px; ">1、良好的热稳定性和长期静液压性能</div>
+<div align="left" style="color: rgb(73, 76, 78); font-family: 'Lucida Grande', 'Lucida Sans Unicode', 宋体, 新宋体, arial, verdana, sans-serif; line-height: 21px; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PE-RT管材的均质性好，抗蠕变性能优异，可以保证长期在较高温度、压力下使用的安全性；</div>
+<div align="left" style="color: rgb(73, 76, 78); font-family: 'Lucida Grande', 'Lucida Sans Unicode', 宋体, 新宋体, arial, verdana, sans-serif; line-height: 21px; ">2、良好的柔韧性</div>
+<div align="left" style="color: rgb(73, 76, 78); font-family: 'Lucida Grande', 'Lucida Sans Unicode', 宋体, 新宋体, arial, verdana, sans-serif; line-height: 21px; ">&nbsp;&nbsp;&nbsp;&nbsp; PE-RT具有良好的柔韧性，弹性模量小，易于弯曲，弯曲后的变形力小，易于补偿。所以PE-RT&nbsp;一般可以成盘生产，施工方便，也</div>
+<div align="left" style="color: rgb(73, 76, 78); font-family: 'Lucida Grande', 'Lucida Sans Unicode', 宋体, 新宋体, arial, verdana, sans-serif; line-height: 21px; ">&nbsp;&nbsp;&nbsp;&nbsp; 不会因为应力集中造成管材的损坏；</div>
+<div align="left" style="color: rgb(73, 76, 78); font-family: 'Lucida Grande', 'Lucida Sans Unicode', 宋体, 新宋体, arial, verdana, sans-serif; line-height: 21px; ">
+<div>3、抗冲击性好</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp; PE-RT是具有较高分子量的乙烯和辛烯共聚树脂，它特有的线性乙烯主链和辛烯短支链分支，使之具有优异的抗冲击性能；</div>
+<div>4、低温性能突出</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp; PE-RT的低温脆裂温度达到-70℃，可以在较低的温度下施工、运输，同时即使在低温状态下，PE-RT仍旧具有很好的柔韧性。</div>
+<div>5、可热熔连接</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp; PE-RT可以进行热熔连接，对于暗埋施工的地板采暖等形式，热熔连接的安全性远大于机械连接，可以很方便、快捷的修复受损管</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp; 材，可以减少工程风险，同时节约了成本；</div>
+<div>6、卫生安全可回收</div>
+</div>
+<p><span style="color: rgb(73, 76, 78); font-family: 'Lucida Grande', 'Lucida Sans Unicode', 宋体, 新宋体, arial, verdana, sans-serif; line-height: 21px; ">&nbsp; &nbsp; &nbsp;PE-RT管材无毒无味，卫生性能好。同时产品具有可回收性，不会造成环境污染。生产工艺易掌握和控制，产品性能稳定。</span></div><div class='wingsArea'>应用领域</div><div class='wingsArea'>连接方式</div><div class='wingsArea'>规格型号：</p>
+<p>
+<table width="320" height="209" style="border-collapse:collapse;width:240.00pt;">
+    <colgroup><col width="149" /> <col width="171" /> </colgroup>
+    <tbody>
+        <tr height="19">
+            <td class="et2" x:str="" height="19" width="149" style="font-size: 12pt; text-align: center; vertical-align: bottom; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 111.75pt; ">PE-RT供暖管</td>
+            <td class="et2" x:str="" height="19" width="171" style="font-size: 12pt; text-align: center; vertical-align: bottom; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 128.25pt; ">PE-RT五层阻氧供暖管</td>
+        </tr>
+        <tr height="19">
+            <td class="et3" x:str="" height="19" width="149" style="font-size: 11pt; text-align: center; vertical-align: middle; border-left-width: 0.5pt; border-left-style: solid; border-left-color: rgb(0, 0, 0); border-right-width: 0.5pt; border-right-style: solid; border-right-color: rgb(0, 0, 0); border-bottom-width: 0.5pt; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); height: 14.25pt; width: 111.75pt; background-position: initial initial; background-repeat: initial initial; ">规格</td>
+            <td class="et3" x:str="" height="19" width="171" style="font-size: 11pt; text-align: center; vertical-align: middle; border-left-width: 0.5pt; border-left-style: solid; border-left-color: rgb(0, 0, 0); border-right-width: 0.5pt; border-right-style: solid; border-right-color: rgb(0, 0, 0); border-bottom-width: 0.5pt; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); height: 14.25pt; width: 128.25pt; background-position: initial initial; background-repeat: initial initial; ">规格</td>
+        </tr>
+        <tr height="19">
+            <td class="et4" x:str="" height="19" width="149" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 111.75pt; background-position: initial initial; background-repeat: initial initial; ">16*2.0</td>
+            <td class="et4" x:str="" height="19" width="171" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 128.25pt; background-position: initial initial; background-repeat: initial initial; ">16*2.0</td>
+        </tr>
+        <tr height="19">
+            <td class="et4" x:str="" height="19" width="149" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 111.75pt; background-position: initial initial; background-repeat: initial initial; ">20*2.0</td>
+            <td class="et4" x:str="" height="19" width="171" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 128.25pt; background-position: initial initial; background-repeat: initial initial; ">20*2.0</td>
+        </tr>
+        <tr height="19">
+            <td class="et4" x:str="" height="19" width="149" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 111.75pt; background-position: initial initial; background-repeat: initial initial; ">20*2.3</td>
+            <td class="et4" x:str="" height="19" width="171" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 128.25pt; background-position: initial initial; background-repeat: initial initial; ">20*2.3</td>
+        </tr>
+        <tr height="19">
+            <td class="et4" x:str="" height="19" width="149" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 111.75pt; background-position: initial initial; background-repeat: initial initial; ">20*2.8</td>
+            <td class="et4" x:str="" height="19" width="171" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 128.25pt; background-position: initial initial; background-repeat: initial initial; ">20*2.8</td>
+        </tr>
+        <tr height="19">
+            <td class="et4" x:str="" height="19" width="149" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 111.75pt; background-position: initial initial; background-repeat: initial initial; ">25*2.3</td>
+            <td class="et4" x:str="" height="19" width="171" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 128.25pt; background-position: initial initial; background-repeat: initial initial; ">25*2.3</td>
+        </tr>
+        <tr height="19">
+            <td class="et4" x:str="" height="19" width="149" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 111.75pt; background-position: initial initial; background-repeat: initial initial; ">25*2.8</td>
+            <td class="et4" x:str="" height="19" width="171" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 128.25pt; background-position: initial initial; background-repeat: initial initial; ">25*2.8</td>
+        </tr>
+        <tr height="19">
+            <td class="et4" x:str="" height="19" width="149" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 111.75pt; background-position: initial initial; background-repeat: initial initial; ">25*3.5</td>
+            <td class="et4" x:str="" height="19" width="171" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 128.25pt; background-position: initial initial; background-repeat: initial initial; ">25*3.5</td>
+        </tr>
+        <tr height="19">
+            <td class="et4" x:str="" height="19" width="149" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 111.75pt; background-position: initial initial; background-repeat: initial initial; ">32*2.9</td>
+            <td class="et4" x:str="" height="19" width="171" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 128.25pt; background-position: initial initial; background-repeat: initial initial; ">32*2.9</td>
+        </tr>
+        <tr height="19">
+            <td class="et4" x:str="" height="19" width="149" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 111.75pt; background-position: initial initial; background-repeat: initial initial; ">32*3.6</td>
+            <td class="et4" x:str="" height="19" width="171" style="font-size: 11pt; text-align: center; vertical-align: middle; border: 0.5pt solid rgb(0, 0, 0); height: 14.25pt; width: 128.25pt; background-position: initial initial; background-repeat: initial initial; ">32*3.6</td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+            <div class="mainbot">
+                <div id="demo01" class="flexslider">
+                    <ul class="slides">
+                        {dede:arclist row=5 orderby=pubdate type='image.' imgwidth='224' imgheight='170' typeid=top}
+                                <li><div class="img"><a href="[field:arcurl/]"><img alt="[field:title function='html2text(@me)'/]" src="[field:litpic/]" width="224" height="170"/></a></div></li>
+                             {/dede:arclist}
+                               
+                    </ul>
+                </div>
+                <div class="mbotright">
+                    <div class="mbotlist">
+                        <div class="mbtit"><a href="About.aspx">关于我们<span>/ABOUT US</span></a></div>
+                            
+                                    <p>{dede:sql sql='Select content from dede_arctype where id=6'}[field:content function='html2text(cn_substr(@me,70))'/]...{/dede:sql}</p>
+                                
+                        <div class="mbtn"><a href=""></a></div>
+                        <div class="mbpic"><a href=""></a></div>
+                    </div>
+                    <div class="mbotlist">
+                        <div class="mbtit"><a target="_blank" href="">公司文化<span>/ABOUT US</span></a></div>
+                        
+                                <p>{dede:sql sql='Select content from dede_arctype where id=6'}[field:content function='html2text(cn_substr(@me,70))'/]...{/dede:sql}</p>
+                            
+                        <div class="mbtn"><a target="_blank" href=""></a></div>
+                        <div class="mbpic bg2"><a target="_blank" href=""></a></div>
+                    </div>
+                    <div class="mbotlist">
+                        <div class="mbtit"><a href="">服务支持<span>/dynamic</span></a></div>
+                        
+                                <p>{dede:sql sql='Select content from dede_arctype where id=6'}[field:content function='html2text(cn_substr(@me,70))'/]...{/dede:sql}</p>
+                            
+                        <div class="mbtn"><a href=""></a></div>
+                        <div class="mbpic bg3"><a href=""></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {dede:include filename="footer.htm"/}
+    </div>
+
+    <div class="rigscroll">
+	    <div class="rexian"><a href="#"><img alt="" src="/templets/default/images/rexian.jpg" /></a><p>咨询热线<br/>0371-55617968</p></div>
+        <ul class="zixun">
+    	    <li><a target="_blank" href="" class="qq"></a><p><a target="_blank" href="">QQ咨询</a></p></li>
+            <li><a href="#" class="zx"></a><p><a href="#">在线咨询</a></p></li>
+        </ul>
+        <div class="erweima"><img alt="" src="/templets/default/Images/erweima.jpg" /></div>
+    </div>
+    <script type="text/javascript" src="/templets/default/Js/jQuery.hhShare.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //图片滚动特效
+            $('#asid_share').hhShare({
+                cenBox: 'asid_share_box',  //里边的小层
+                icon: 'adid_icon',
+                addClass: 'red_bag',
+                titleClass: 'asid_title',
+                triangle: 'asid_share_triangle', //鼠标划过显示图层，边上的小三角
+                showBox: 'asid_sha_layer' //鼠标划过显示图层
+            });
+        });
+    </script>
+    <div class="asid_share" id="asid_share">
+	    <div class="asid_share_box relative" style="display:none;">
+		    <a href="#"><img alt="返回顶部" title="返回顶部" class="adid_icon" src="/templets/142/Images/icon_back.png" /></a>
+	    </div>
+    </div>
+    </form>
+</body>
+</html>

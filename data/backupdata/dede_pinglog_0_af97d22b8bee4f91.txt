@@ -1,0 +1,4 @@
+INSERT INTO `dede_pinglog` VALUES('78','1396621877','0');
+INSERT INTO `dede_pinglog` VALUES('77','1377185094','1');
+INSERT INTO `dede_pinglog` VALUES('79','1397139507','1');
+INSERT INTO `dede_pinglog` VALUES('80','1397139804','1');

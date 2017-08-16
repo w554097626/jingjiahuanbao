@@ -1,0 +1,2 @@
+INSERT INTO `dede_kwkeyword` VALUES('3','3','建材资讯','0','0','30','1365580532');
+INSERT INTO `dede_kwkeyword` VALUES('2','2','装饰资讯','0','0','0','0');

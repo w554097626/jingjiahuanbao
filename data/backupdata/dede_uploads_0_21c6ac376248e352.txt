@@ -1,0 +1,16 @@
+INSERT INTO `dede_uploads` VALUES('1','1',' 低温热水地面辐射采暖系统安全性浅析','/uploads/allimg/140714/1-140G40945070-L.jpg','1','0','0','0','67535','1405302307','1');
+INSERT INTO `dede_uploads` VALUES('2','2','塑管业进入质量灾害高危期','/uploads/allimg/140714/1-140G40945350-L.jpg','1','0','0','0','83360','1405302335','1');
+INSERT INTO `dede_uploads` VALUES('3','3','地暖工程的设计漏洞亟待封堵','/uploads/allimg/140714/1-140G40946040-L.jpg','1','0','0','0','169979','1405302364','1');
+INSERT INTO `dede_uploads` VALUES('4','4','热泵和冰蓄冷技术将引领未来冷暖革命新趋势','/uploads/allimg/140714/1-140G40946260-L.jpg','1','0','0','0','169979','1405302386','1');
+INSERT INTO `dede_uploads` VALUES('5','5','PE-RT','/uploads/allimg/140714/1-140G4094J70-L.jpg','1','0','0','0','44117','1405302467','1');
+INSERT INTO `dede_uploads` VALUES('6','6','耐热聚乙烯 PE-RT 五层阻氧管','/uploads/allimg/140714/1-140G4094Q80-L.jpg','1','0','0','0','51752','1405302498','1');
+INSERT INTO `dede_uploads` VALUES('7','7','耐热聚乙烯 PE-RT管材','/uploads/allimg/140714/1-140G4094U40-L.jpg','1','0','0','0','33306','1405302534','1');
+INSERT INTO `dede_uploads` VALUES('8','8','聚丁烯 PB管材 五层阻氧管','/uploads/allimg/140714/1-140G40949230-L.jpg','1','0','0','0','33306','1405302563','1');
+INSERT INTO `dede_uploads` VALUES('9','9','聚丁烯 PB管材','/uploads/allimg/140714/1-140G40949500-L.jpg','1','0','0','0','50909','1405302590','1');
+INSERT INTO `dede_uploads` VALUES('10','9','聚丁烯 PB管材','/uploads/allimg/140714/0950024126-0.png','1','230','173','0','5398','1405302605','1');
+INSERT INTO `dede_uploads` VALUES('11','10','万通上游国际','/uploads/allimg/140714/1-140G40950430-L.jpg','1','0','0','0','51261','1405302643','1');
+INSERT INTO `dede_uploads` VALUES('12','11','万年花城','/uploads/allimg/140714/1-140G40951070-L.jpg','1','0','0','0','66164','1405302667','1');
+INSERT INTO `dede_uploads` VALUES('13','12','经销商1','/uploads/allimg/140714/1-140G40952140-L.jpg','1','0','0','0','9275','1405302734','1');
+INSERT INTO `dede_uploads` VALUES('14','13','经销商2','/uploads/allimg/140714/1-140G40952390-L.jpg','1','0','0','0','11142','1405302759','1');
+INSERT INTO `dede_uploads` VALUES('15','14','经销商3','/uploads/allimg/140714/1-140G40952590-L.jpg','1','0','0','0','25009','1405302779','1');
+INSERT INTO `dede_uploads` VALUES('16','15','经销商4','/uploads/allimg/140714/1-140G40953180-L.jpg','1','0','0','0','22399','1405302798','1');

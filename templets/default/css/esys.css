@@ -1,0 +1,732 @@
+@charset "utf-8";
+/* CSS Document */
+body, input, ul, ol, dl, li, dt, dd, form, div, h1, h2, h3, h4, h5, h6, p {
+	margin:0;
+	padding:0;
+	font-size:12px;
+	color:#333;
+	font-family:"宋体";
+}
+body {
+	background:#fff;
+}
+li {
+	list-style:none;
+}
+img {
+	display:block;
+	border:none;
+}
+input {
+	border:none;
+}
+a {
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:none;
+	cursor:pointer
+}
+.clear {
+	zoom:1;
+}
+.clear:after {
+	clear:both;
+	display:block;
+	content:"\20";
+}
+.ecotop {
+	width:100%;
+	height:701px;
+	background:url(../Images/ecotop.jpg) 0 bottom repeat-x;
+	position:relative
+}
+.focus {
+	width:100%;
+	height:699px;
+	position:relative;
+	overflow:hidden
+}
+.f426x240 {
+	width:100%;
+	height:699px;
+	position:relative;
+	overflow:hidden
+}
+.f426x240 img {
+	width:100%;
+	height:699px;
+	border:none
+}
+.f426x240 li p {
+	position:absolute;
+	top:0;
+	width:660px;
+	left:50%;
+	top:285px;
+	margin-left:-330px
+}
+.f426x240 li p img {
+	width:660px;
+	height:142px;
+}
+.f426x240 li p a {
+	display:block;
+	width:168px;
+	height:33px;
+	line-height:33px;
+	border:1px solid #fff;
+	text-align:center;
+	font-family:"微软雅黑";
+	font-size:20px;
+	color:#fff;
+	margin:28px auto 0;
+}
+.f426x240 li p a:hover {
+	background:url(../Images/ecomore.png) repeat
+}
+.rslides {
+	width:100%;
+	position:relative;
+	list-style:none;
+	padding:0
+}
+.rslides_nav {
+	display:none
+}
+.rslides_tabs {
+	clear:both;
+	text-align:center;
+	width:165px;
+	height:25px;
+	padding:10px 0 0 50px;
+	background:url(../Images/ecotab.png) no-repeat;
+	position:absolute;
+	bottom:0;
+	left:50%;
+	margin-left:-102px;
+}
+.rslides_tabs li {
+	float:left;
+	width:14px;
+	height:15px;
+	margin:0 6px;
+	font-size:0;
+	overflow:hidden
+}
+.rslides_tabs a {
+	width:14px;
+	height:15px;
+	background:url(../Images/econormal.png) no-repeat;
+	font-size:0;
+	display:block;
+	float:left;
+	overflow:hidden;
+	color:#25320a
+}
+.rslides_tabs .rslides_here a {
+	background:url(../Images/ecohover.png) no-repeat;
+	color:#fff
+}
+.econtop2 {
+	position:absolute;
+	top:0;
+	left:50%;
+	width:960px;
+	margin-left:-480px;
+	height:95px;
+	border-bottom:3px solid #8ac019;
+	background:#fff;
+}
+.ecolog {
+	padding:18px 0 0 41px;
+	width:125px;
+	height:59px;
+	float:left;
+	overflow:hidden
+}
+.econav {
+	float:right;
+	margin-right:20px;
+	height:95px;
+	line-height:95px;
+}
+.econav li {
+	float:left;
+	width:95px;
+	height:95px;
+	line-height:95px;
+	margin:0 5px;
+	display:inline;
+}
+.econav li.con {
+	width:115px;
+}
+.econav li .bi {
+	position:relative;
+	z-index:0;
+}
+.econav li .bi:hover {
+	z-index:99;
+}
+.econav li .bi:hover span {
+	visibility:visible;
+	top:0;
+	left:0;
+	cursor:pointer;
+}
+.econav li .bi span {
+	position:absolute;
+	left:-999em;
+	visibility:hidden;
+}
+.econav li a, .econav li .bi span {
+	height:95px;
+	line-height:95px;
+	text-decoration:none;
+	background:#fff;
+	color:#8b8b8b;
+	display:block;
+	width:95px;
+	text-align:center;
+	font-family:"微软雅黑";
+	font-size:16px;
+}
+.econav li.con a, .econav li.con .bi span {
+	width:115px;
+}
+.econav li a:hover, .econav li .bi:hover span {
+	color:#FFFFFF;
+	background:#8ac019;
+}
+.ecoabout {
+	width:960px;
+	height:516px;
+	margin:0 auto;
+	background:#fff;
+	overflow:hidden
+}
+.ecopro {
+	width:100%;
+	height:802px;
+	background:url(../Images/ecopro.jpg) repeat-x;
+	overflow:hidden
+}
+.ecocontact {
+	width:100%;
+	overflow:hidden
+}
+.ecotit {
+	margin:80px 0 0;
+	overflow:hidden
+}
+.ecotit img {
+	height:44px;
+}
+.ecotit p {
+	font-family:"微软雅黑";
+	font-size:22px;
+	color:#000;
+	margin-top:18px;
+}
+.slideTxtBox2 {
+	width:960px;
+	margin-top:58px;
+	padding-bottom:84px;
+}
+.slideTxtBox2 .hd {
+	height:38px;
+	width:960px;
+}
+.slideTxtBox2 .hd ul {
+	float:left;
+	height:38px;
+}
+.slideTxtBox2 .hd ul li {
+	float:left;
+	width:112px;
+	height:38px;
+	text-align:center;
+	line-height:38px;
+	color:#fff;
+	background:#9f9f9f;
+	cursor:pointer;
+	font-family:"微软雅黑";
+	font-size:16px;
+	margin-right:4px;
+}
+.slideTxtBox2 .hd ul li a {
+	color:#fff;
+}
+.slideTxtBox2 .hd ul li a:hover {
+	text-decoration:none;
+}
+.slideTxtBox2 .hd ul li.on {
+	color:#fff;
+	background:#8ac019;
+}
+.slideTxtBox2 .hd ul li.on a {
+	color:#fff;
+}
+.slideTxtBox2 .hd .btn {
+	float:right;
+}
+.slideTxtBox2 .hd .btn div {
+	width:38px;
+	height:39px;
+	overflow:hidden;
+	cursor:pointer;
+	float:left;
+	margin:0 5px 0 0;
+	display:inline;
+}
+.slideTxtBox2 .hd .btn .prev10 {
+	background:url(../Images/ecopre.jpg) no-repeat;
+}
+.slideTxtBox2 .hd .btn .next10 {
+	background:url(../Images/econext.jpg) no-repeat;
+}
+.slideTxtBox2 .bd {
+	width:960px;
+	margin:42px 0 0;
+	text-align:center;
+}
+.infoList {
+	font-size:14px;
+	color:#7b7b7b;
+	line-height:30px;
+	text-align:left;
+	overflow:hidden
+}
+.infoList p {
+	font-size:14px;
+	color:#7b7b7b;
+	line-height:30px;
+	clear:both;
+	overflow:hidden
+}
+.ecoinfo p {
+	font-size:14px;
+	font-size:14px;
+	color:#7b7b7b;
+	line-height:30px;
+	text-indent:2em;
+	width:635px;
+	float:left;
+	overflow:hidden
+}
+.ecoinfo img {
+	width:261px;
+	height:123px;
+	border:1px solid #acacac;
+	float:right
+}
+.featureContainer {
+	width:960px;
+	margin:0 auto;
+	overflow:hidden
+}
+#feature {
+	border: #999 0px dotted;
+}
+#feature .button {
+	border: #999 0px dotted;
+	position: absolute;
+	width: 840px;
+	top: 72px;
+	left: 0px
+}
+.featitle {
+	height:95px;
+	margin-top:88px;
+	position:relative;
+	overflow:hidden
+}
+.fealeft {
+	text-align:center
+}
+.fealeft p {
+	line-height:24px;
+	margin-top:15px;
+	font-family:"微软雅黑";
+	font-size:26px;
+	color:#fff
+}
+.fealeft p a {
+	color:#fff
+}
+.fealeft img {
+	width:244px;
+	height:44px;
+	margin:0 auto;
+}
+.fearight {
+	position:absolute;
+	right:0;
+	top:45px
+}
+#feature .prev1 {
+	text-indent: -9999px;
+	width: 39px;
+	background: url(../Images/ecopre.jpg) no-repeat;
+	height: 38px;
+	display:block;
+	float:right;
+	position:relative;
+	margin-right:4px;
+}
+#feature .next1 {
+	text-indent: -9999px;
+	width: 39px;
+	background:url(../Images/econext.jpg) no-repeat;
+	height: 38px;
+	display:block;
+	float:right;
+	position:relative;
+	margin-right:7px;
+}
+.featureUL {
+	border: #000 0px dotted;
+	position: relative;
+	padding:0;
+	list-style-type: none;
+	margin: 0px;
+	width: 1008px;
+	float: left;
+	left: 0px
+}
+.featureBox {
+	width: 300px;
+	float: left;
+	padding:0 11px;
+	overflow: hidden;
+}
+#botton-scroll {
+	z-index: 0;
+	border: #999 0px dotted;
+	margin: 0px auto;
+	width: 300px;
+	float: left;
+}
+#block {
+	z-index: 0;
+	position: relative;
+	padding: 35px 0 0 0;
+	width: 960px;
+	overflow: hidden;
+	clear:both
+}
+#block .box {
+	border: #d8d8d8 0px solid;
+	width: 300px;
+	height:494px;
+	float: left;
+	position:relative;
+	overflow:hidden
+}
+#block .box img {
+	width:300px;
+	height:205px;
+	border-bottom:2px solid #fff
+}
+#block .box:hover img {
+	border-bottom:2px solid #8ac019;
+	background:#000;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	opacity:0.8;
+}
+#block .box .feature-title {
+	font-size: 140%;
+	font-weight: normal
+}
+.boxeco {
+	height:287px;
+	background:#fff
+}
+#block .box .feature-thumb {
+	width: 240px;
+	margin-bottom: 5px;
+	float: left;
+	height: 150px
+}
+.ecoeng {
+	line-height:25px;
+	padding:35px 0 20px;
+	width:210px;
+	border-bottom:1px solid #BEBEBE;
+	font-family:"微软雅黑";
+	font-size:16px;
+	margin-left:11px;
+	color:#252525;
+	overflow:hidden
+}
+.ecoeng a {
+	color:#696969
+}
+.ecoeng a:hover {
+	color:#8ac019
+}
+.boxeco p {
+	line-height:28px;
+	color:#9a9a9a;
+	padding:20px 19px 20px 10px;
+}
+a.ecomore {
+	display:block;
+	width:82px;
+	height:32px;
+	line-height:32px;
+	text-align:center;
+	float:right;
+	background:#9f9f9f;
+	color:#fff;
+	margin-right:22px;
+	font-family:"微软雅黑";
+	font-size:14px;
+	margin-top:3px;
+	overflow:hidden
+}
+a.ecomore:hover {
+	background:#8ac019;
+}
+.ecobox {
+	width:960px;
+	margin:0 auto
+}
+.ecodesc {
+	border-top:1px solid #BDBDBD;
+	padding:28px 0 40px;
+	margin-top:46px;
+	overflow:hidden
+}
+.ecodesc li {
+	height:20px;
+	line-height:20px;
+	width:310px;
+	margin-top:13px;
+	float:left;
+	verflow:hidden
+}
+.ecodesc li.two {
+	width:455px;
+}
+.ecodesc li.three {
+	width:192px;
+	float:right
+}
+.ecodesc li img {
+	float:left;
+	width:19px;
+	height:20px;
+	padding-right:10px;
+}
+.ecodesc li a {
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#000
+}
+.ecodesc li p {
+	line-height:20px;
+	font-family:"微软雅黑";
+	color:#000;
+	font-size:14px;
+	float:left;
+	width:auto;
+}
+.ecomap, .ecomap img {
+	width:960px;
+	height:320px;
+	overflow:hidden
+}
+.ecomap {
+	padding-bottom:35px;
+}
+.ecobottom {
+	margin-top:45px;
+	height:54px;
+	line-height:54px;
+	background:#898a8b;
+	text-align:center;
+	font-family:"微软雅黑";
+	color:#fff;
+	overflow:hidden
+}
+.ecoptop {
+	border-top:3px solid #8BC018;
+	height:96px;
+}
+.econtop3 {
+	width:960px;
+	height:95px;
+	border-bottom:1px solid #8BC018;
+	margin:0 auto;
+	overflow:hidden
+}
+.ecomain {
+	width:960px;
+	margin:44px auto 0;
+	overflow:hidden
+}
+#portfolio-items-filter {
+	float: right;
+	height:40px;
+	display:block;
+	overflow: hidden;
+}
+#portfolio-items-filter li {
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	line-height: 27px;
+	height: 35px;
+}
+#portfolio-items-filter li:first-child {
+	margin-right: 5px;
+	background-color: #8ac019;
+	color: #fff;
+	padding: 0px 8px;
+	line-height: 37px;
+	font-family:"微软雅黑";
+	font-size:14px;
+}
+.no-js #portfolio-items-filter li:first-child, .no-js #portfolio-items-filter .all {
+	display: none;
+}
+.ie7 #portfolio-items-filter li:first-child {
+	display: none;
+}
+#portfolio-items-filter a {
+	background: #8ac019;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	margin: 0 0 5px 5px;
+	padding: 5px 10px;
+	font-family:"微软雅黑";
+	font-size:14px;
+}
+.no-js #portfolio-items-filter a {
+	display: block;
+}
+.ie7 #portfolio-items-filter a {
+	display: block;
+	margin: 0 0 5px 5px;
+	padding: 5px 8px;
+	width: auto;
+}
+#portfolio-items-filter a:hover {
+	background: #acacac;
+}
+#portfolio-items-filter li.current {
+	width:auto;
+}
+#portfolio-items-filter li.current a {
+}
+.ecosyspro {
+	width:960px;
+	padding-top:10px;
+*+padding-bottom:25px;
+	overflow:hidden
+}
+.ecosyslist li {
+	width:300px;
+	height:242px;
+	float:left;
+	margin:15px 0;
+	background:#000;
+	margin-right:30px;
+	overflow:hidden
+}
+.ecosyslist li img {
+	width:300px;
+	height:205px;
+}
+.ecosyslist li p {
+	height:37px;
+	line-height:37px;
+	background:#EEEEEE;
+	text-align:center;
+	color:#535456;
+	font-family:"微软雅黑";
+	font-size:14px;
+}
+.ecosyslist li p a {
+	color:#535456;
+}
+.ecosyslist li.none {
+	margin-right:0
+}
+.ecosyslist li:hover img {
+	background:#000;
+	filter:alpha(opacity=90);
+	-moz-opacity:0.9;
+	opacity:0.9;
+}
+.ecosyslist li:hover p {
+	background:#eee url(../Images/ecopro.png) 0 bottom no-repeat;
+}
+.ecosyslist li:hover p a {
+	color:#8ac019
+}
+.artcon {
+	overflow:hidden
+}
+.artitle {
+	line-height:20px;
+	text-align:center;
+	font-size:14px;
+	color:#4f4f4f;
+	font-weight:bold
+}
+.ecomain2 {
+	width:960px;
+	margin:30px auto 0;
+	overflow:hidden
+}
+.artcon2 {
+	clear:both;
+	padding-top:30px;
+	overflow:hidden
+}
+.ardate3 {
+	line-height:20px;
+	border-bottom:1px dashed #a8a8a8;
+	padding:8px 0 10px;
+	text-align:center;
+	color:#797979;
+	text-align:center
+}
+.arcon, .arcon2 {
+	line-height:28px;
+	margin:18px 0 0;
+	color:#737373;
+	overflow:hidden
+}
+.arcon img {
+	max-width:720px;
+	padding:20px 0 5px 0;
+	overflow:hidden
+}
+.arcon p {
+	line-height:28px;
+	color:#737373
+}
+.arcon p img {
+	margin: 5px auto;
+}
+.fenxiang, .fenxiang2 {
+	height:16px;
+	margin:10px 0 0;
+	padding-bottom:10px;
+	width:338px;
+	_width:345px;
+	float:right;
+	overflow:hidden
+}
+.fenxiang2 {
+	float:none;
+	margin:20px auto 0;
+}

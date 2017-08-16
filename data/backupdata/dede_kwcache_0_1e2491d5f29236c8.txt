@@ -1,0 +1,7 @@
+INSERT INTO `dede_kwcache` VALUES('140','3','http://www.jhnews.com.cn/jhrb/2013-03/29/content_2726043.htm');
+INSERT INTO `dede_kwcache` VALUES('139','3','http://www.soci.com.cn/resource/resourcelist.jsp?retype=10');
+INSERT INTO `dede_kwcache` VALUES('138','3','http://www.jieju.cn/News/20130402/Detail304899.htm');
+INSERT INTO `dede_kwcache` VALUES('137','3','http://www.bmlink.com/news/786726.html');
+INSERT INTO `dede_kwcache` VALUES('136','3','http://shop.ebdoor.com/Shops/2916706/DynamicInfos/2505951.aspx');
+INSERT INTO `dede_kwcache` VALUES('135','3','http://news.syjiancai.com/n_34376.html');
+INSERT INTO `dede_kwcache` VALUES('134','3','http://news.ifeng.com/gundong/detail_2012_09/20/17753905_0.shtml');
